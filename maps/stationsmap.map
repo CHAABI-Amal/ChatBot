@@ -1,0 +1,7 @@
+[
+["stationA", "stationB,stationC,stationG,stationF"],
+["stationB", "stationA,stationC,stationG,stationF"],
+["stationC", "stationA,stationB,stationG,stationF"],
+["stationG", "stationA,stationB,stationC,stationF"],
+["stationF", "stationA,stationB,stationC,stationG"]
+]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>MY FAVORITE COLOR IS <set>colors</set></pattern>
+        <template>Nice choice! I like <star/> too.</template>
+    </category>
+    <category>
+        <pattern>MY FAVORITE COLOR IS *</pattern>
+        <template>Interesting. I don't know that color.</template>
+    </category>
+    <category>
+        <pattern>IS<set>number</set> A NUMBER</pattern>
+        <template>Yes. <set name="number"><star/></set> is a number</template>
+    </category>
+    <category>
+        <pattern>IS A NUMBER</pattern>
+        <template>No it isn't</template>
+    </category>
+    <category>
+        <pattern>I WANT A <set>size</set> PIZZA</pattern>
+        <template>What toppings do you want?</template>
+    </category>
+    <category>
+        <pattern>I WANT A <set>toppings</set> PIZZA</pattern>
+        <template>What size do you want?</template>
+    </category>
+    <category>
+        <pattern>I WANT A <set>size</set><set>toppings</set> PIZZA </pattern>
+        <template>size=<star/><break/>toopings=<star index="2"/>, Coming right up!</template>
+    </category>
+    <category>
+        <pattern>i want a specific #<set>size</set># <set>toppings</set> #</pattern>
+        <template>Coming right up!</template>
+    </category>
+    <category>
+        <pattern>I WANT A PIZZA</pattern>
+        <template>What do you mean?</template>
+    </category>
+</aiml>

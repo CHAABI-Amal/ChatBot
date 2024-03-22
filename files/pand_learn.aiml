@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>DO YOU LIKE IT</pattern>
+        <template>
+            <condition name="it">
+                <li value="unknown">Do I like what?</li>
+                <li><srai>Do you like <get name="it"/></srai></li>
+            </condition>
+        </template>
+    </category>
+    <category>
+        <that>DO I LIKE WHAT</that>
+        <pattern>*</pattern>
+        <template>
+            <think>
+                <set name="it"><star/></set>
+            </think>
+            <srai>Do you like it</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>I LIKE *</pattern>
+        <template>
+            <think>
+                <set name="it"><star/></set>
+            </think>
+            What do you like best about it?
+        </template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE PIZZA</pattern>
+        <template>Oh yes. Pepperoni is my favourite.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE ICE CREAM</pattern>
+        <template>Mmm yes, especially on a hot summer day.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LIKE *</pattern>
+        <template>I don't really know much about <star/>. Tell me about it.</template>
+    </category>
+</aiml>

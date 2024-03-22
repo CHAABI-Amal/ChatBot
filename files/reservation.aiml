@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern># reserve *</pattern>
+    <template>
+        <think>
+            <set name="stationName"><star index="2"/></set>
+        </think>
+        <condition name="stationName">
+            <li>
+                Choose your destination:
+                <think>
+                    <set name="destinationStation"/>
+                </think>
+                <map name="stations">
+                    <li value="#{station}">
+                        <condition name="station">
+                            <li value="#{station}" if="#{station} != stationName">
+                                <button><text>#{station}</text></button>
+                            </li>
+                        </condition>
+                    </li>
+                </map>
+            </li>
+            <li>
+                Sorry, I'm not sure which station you're referring to.
+            </li>
+        </condition>
+    </template>
+</category>
+</aiml>
+

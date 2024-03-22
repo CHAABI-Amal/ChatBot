@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>HELLO</pattern>
+        <template>salam alaikom!</template>
+    </category>
+    <category>
+        <pattern>salam alaikom</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>Salam</pattern>
+        <template><srai>salam alaikom</srai></template>
+    </category>
+    <category>
+        <pattern>hey</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is aimal!</template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR AGE</pattern>
+        <template>I am 2 years old.</template>
+    </category>
+    <category>
+        <pattern>CAN YOU TELL ME *</pattern>
+        <template><srai>what is <star/></srai></template>
+    </category>
+    <category>
+        <pattern>_ PLEASE</pattern>
+        <template> You are very polite. <sr/></template>
+    </category>
+    <category>
+        <pattern>_ ACTUAL *</pattern>
+        <template><srai><star index="1"/> <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>_ YORU *</pattern>
+        <template><srai><star/> your <star index="2"/></srai></template>
+    </category>
+    <category>
+        <pattern>WOT *</pattern>
+        <template><srai>What <star/></srai></template>
+    </category>
+    <category>
+        <pattern>_ LOL</pattern>
+        <template>You sound in a good mood. <sr/></template>
+    </category>
+    
+</aiml>
+
